@@ -40,14 +40,14 @@
 		</hgroup>
 
 
-<!--This part is the image-->
+<!---This part is the image. It is currently hidden:
 
 <?php $header_image = get_header_image();
 		if ( ! empty( $header_image ) ) : ?>
 			<a><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="100%" height="100%" alt=""/></a>
 		<?php endif; ?>
 		
-
+END OF HIDDEN-->
 			
 		
 	</header><!-- #masthead -->

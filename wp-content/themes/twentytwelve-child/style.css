@@ -139,7 +139,6 @@ footer[role="contentinfo"] {
 
 section[role="banner"] {
 	margin-bottom: 100px;
-	
 }
 
 
@@ -431,6 +430,8 @@ img.aligncenter {
 	border-style: solid;
 	border-width: 7px;
 	border-color: #ededed;
+	
+
 
 	/*The last two lines add borders around site content*/
 	/*The margins created the indentation of the articles*/
@@ -464,7 +465,74 @@ footer.entry-meta {
 
 
 
+/*ADDING BACKGROUND IMAGE PER EACH POST*/
+body.page-id-2 {
+ background-image: url("http://www.knoxville-zoo.org/sites/www/Uploads/images/Exhibits/panda1_709041545401.png") !important; 
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ background-position:center;
+}
 
+
+/*THIS IS ME TRYING TO MAKE IT WHITE AND NOT GRAY IN THE FAR BACKGROUND*/
+/* Minimum width of 960 pixels. */
+@media screen and (min-width: 960px) {
+	body {
+		background-color: #fff;
+	}
+	body .site {
+		padding: 0 40px;
+		padding: 0 2.857142857rem;
+		margin-top: 48px;
+		margin-top: 3.428571429rem;
+		margin-bottom: 48px;
+		margin-bottom: 3.428571429rem;
+		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+		background-color: #fff;
+	}
+	body.custom-background-empty {
+		background-color: #fff;
+	}
+	body.custom-background-empty .site,
+	body.custom-background-white .site {
+		padding: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		box-shadow: none;
+	}
+}
+hr {
+	background-color: #fff;
+	border: 0;
+	height: 1px;
+	margin: 24px;
+	margin-bottom: 1.714285714rem;
+}
+
+
+
+/* Link posts */
+article.format-link header {
+	padding: 0 10px;
+	padding: 0 0.714285714rem;
+	float: right;
+	font-size: 11px;
+	font-size: 0.785714286rem;
+	line-height: 2.181818182;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+	color: #848484;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+
+
+
+
+
+/**********************************taking out the widget area***********************/
 /* =Front page template
 -------------------------------------------------------------- */
 
