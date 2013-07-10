@@ -1,0 +1,227 @@
+/*
+Theme Name:     Customizr-Child
+Theme URI:      http://example.com/
+Description:    Child theme for Customizr
+Author:         Mary Morgan
+Author URI:     http://missmarymorgan.com/
+Template:       customizr                            
+Version:        0.1.0
+*/
+
+@import url("../customizr/inc/css/black.css");
+
+/* Grid system and page structure */
+
+body {
+  margin: 0;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+/* Base CSS*/
+
+.muted {
+  color: #D3D3D3;
+}
+a.muted:hover,
+a.muted:focus {
+  color: #D3D3D3;
+}
+a.text-info:hover,
+a.text-info:focus {
+  color: #D3D3D3;
+}
+.text-success {
+  color: #D3D3D3;
+}
+a.text-success:hover,
+a.text-success:focus {
+  color: #D3D3D3;
+}
+
+body {
+  padding-bottom: 0px;
+  color: #5a5a5a;
+  background: #FEFEFA;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  line-height: 20px;
+  color: #333333;
+  text-shadow: 0px 1px 0px white;
+ }
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+h1,
+h2,
+h3 {
+  line-height: 40px;
+}
+h1 {
+  font-size: 80.0px;
+}
+h2 {
+  font-size: 31.5px;
+}
+h3 {
+  font-size: 24.5px;
+}
+h4 {
+  font-size: 17.5px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 11.9px;
+}
+
+
+
+
+
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #eeeeee;
+
+ p {
+ 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+ }
+
+ pre {
+  padding: 0 3px 2px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+ }
+
+
+
+/**************** navigation */
+.navbar-search .search-query {
+  margin-bottom: 0;
+  padding: 4px 14px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+
+/****************nav bar at top */
+
+.navbar .navbar-inner {
+  z-index: 200;
+  /* position: relative; */
+  margin: 14px 20px 10px;
+  border: 0;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25);
+  padding-left: 5px;
+}
+
+.navbar-wrapper .brand {
+  float: left;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  /* Increase vertical padding to match navbar links */
+  font-size: 36px;
+  font-weight: bold;
+  min-width: 250px\9;
+  color: #333333;
+}
+  .navbar-wrapper .brand h1 {
+  font-size: 100px;
+  color: #333333;
+
+}
+.navbar-wrapper .navbar h2 {
+  float: right;
+  padding-right: 5px;
+  font-style: normal;
+  line-height: 19px;
+  text-align: right;
+  color: #C0C0C0;
+}
+
+}
+h2.site-description {
+  font-size: 20px;
+  padding-top: 0px;
+  line-height: 20px;
+  font-style: normal;
+  color: #C0C0C0;
+}
+
+
+
+
+
+/* Comment section */
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-repeat: repeat-x;
+  border-color: #222222 #222222 black;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+
+
+
