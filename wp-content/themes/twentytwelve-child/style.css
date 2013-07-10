@@ -71,7 +71,7 @@ a:hover {
 }
 .site-header h2 {
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 50px;
 	line-height: 1.846153846;
 	color: #757575;
 }
@@ -116,13 +116,16 @@ footer[role="contentinfo"] {
 
 /****************** Page structure **************
 ****************/
-.site {
 
+.site {
+	padding: 0 24px;
+	padding: 0 1.714285714rem;
 	background-color: #fff;
 }
 .site-content {
-	margin: 10px 0 0;
-	margin: 1.714285714rem 0 0;
+	margin: 40, 40, 40, 40px;
+	margin: 1.714285714 1.714285714 1.714285714 1.714285714rem;
+	padding: 40, 40, 40, 40px;
 }
 .widget-area {
 	margin: 24px 0 0;
@@ -202,6 +205,7 @@ article.sticky .featured-post {
 	margin-bottom: 24px;
 	margin-bottom: 1.714285714rem;
 	text-align: center;
+
 }
 .entry-content,
 .entry-summary,
@@ -415,15 +419,23 @@ img.aligncenter {
 	padding: 6px 10px 6px 0;
 }
 .site-content article {
-	border-bottom: 4px double #ededed;
 	margin-bottom: 72px;
 	margin-bottom: 5.142857143rem;
-	padding-bottom: 24px;
-	padding-bottom: 1.714285714rem;
+	margin-right:125px;
+	margin-left:125px;
+	padding: 30px;
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
+	border-style: solid;
+	border-width: 7px;
+	border-color: #ededed;
+
+	/*The last two lines add borders around site content*/
+	/*The margins created the indentation of the articles*/
+	/*The padding created space between the borders and the text*/
+
 }
 .page-links {
 	clear: both;

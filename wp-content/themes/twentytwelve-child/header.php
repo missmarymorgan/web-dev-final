@@ -35,13 +35,17 @@
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-			<h1><a href="http://www.missmarymorgan.com"/>MMM</a></h1>
+			<h2><a href="http://www.missmarymorgan.com"/>MMM</a></h2>
 			<background
-			
 		</hgroup>
 
 
+<!--This part is the image-->
 
+<?php $header_image = get_header_image();
+		if ( ! empty( $header_image ) ) : ?>
+			<a><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="100%" height="100%" alt=""/></a>
+		<?php endif; ?>
 		
 
 			
