@@ -430,12 +430,15 @@ img.aligncenter {
 	border-style: solid;
 	border-width: 7px;
 	border-color: #ededed;
+	opacity: 0.82;
+
 	
 
 
-	/*The last two lines add borders around site content*/
+	/*The end border lines add borders around site content*/
 	/*The margins created the indentation of the articles*/
 	/*The padding created space between the borders and the text*/
+	/*Opacity: The closer to 1, the less see-through it is*/
 
 }
 .page-links {
@@ -465,9 +468,10 @@ footer.entry-meta {
 
 
 
-/*ADDING BACKGROUND IMAGE PER EACH POST*/
+/*ADDING BACKGROUND IMAGE PER EACH POST
+First one is the ABOUT page***************************/
 body.page-id-2 {
- background-image: url("http://www.knoxville-zoo.org/sites/www/Uploads/images/Exhibits/panda1_709041545401.png") !important; 
+ background-image: url("http://onebigphoto.com/uploads/2012/04/red-panda-sleeping.jpg") !important; 
  background-repeat:no-repeat;
  background-attachment:fixed;
  background-position:center;
