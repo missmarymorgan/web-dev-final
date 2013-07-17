@@ -479,7 +479,7 @@ First ID (page-id-2) is the ABOUT page***************************/
 }
 
 .page-id-2 {
- background-image: url("http://onebigphoto.com/uploads/2012/04/red-panda-sleeping.jpg") !important; 
+ background-image: url("http://farm6.staticflickr.com/5459/9302330831_971d98e4c3.jpg") !important; 
  background-repeat:no-repeat;
  background-position: top;
  
@@ -557,7 +557,9 @@ SETS TOP PAGE PADDING TO A BIG NUMBER SO THAT THE IMAGE CAN BE SEEN
 .page {
 	padding-top: 150px;
 }
-
+.page-id-2 {
+	padding-top: 300px;
+}
 
 
 
