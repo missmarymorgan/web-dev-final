@@ -39,9 +39,7 @@ a:hover {
 	color: #F0F0F0;
 }
 
-#masthead {
-	martin-top:100px;
-}
+
 
 /* =HEADER 
 -------------------------------------------------------------- */
@@ -78,7 +76,7 @@ a:hover {
 	color: #757575;
 }
 .header-image {
-	margin-top: 5px;
+	margin-top: 100px;
 
 }
 
@@ -126,7 +124,7 @@ footer[role="contentinfo"] {
 }
 .site-content {
 	margin: 40, 40, 40, 40px;
-	margin: 1.714285714 1.714285714 1.714285714 1.714285714rem;
+	
 	padding: 40, 40, 40, 40px;
 }
 .widget-area {
@@ -546,6 +544,19 @@ article.format-link header {
 	border-radius: 3px;
 }
 
+
+
+/******************************************************
+********************************************************
+**********
+*********
+SETS TOP PAGE PADDING TO A BIG NUMBER SO THAT THE IMAGE CAN BE SEEN
+********************/
+
+
+.page {
+	padding-top: 150px;
+}
 
 
 
