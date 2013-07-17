@@ -36,7 +36,8 @@
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
 			<h2><a href="http://www.missmarymorgan.com"/>MMM</a></h2>
-			<background
+			
+				
 		</hgroup>
 
 

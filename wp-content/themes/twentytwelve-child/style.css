@@ -39,13 +39,15 @@ a:hover {
 	color: #F0F0F0;
 }
 
-
+#masthead {
+	martin-top:100px;
+}
 
 /* =HEADER 
 -------------------------------------------------------------- */
 /* Header */
 .site-header {
-	padding: 1px 0;
+	padding: 3px 0;
 	
 }
 .site-header h1,
@@ -76,7 +78,7 @@ a:hover {
 	color: #757575;
 }
 .header-image {
-	margin-top: 0px;
+	margin-top: 5px;
 
 }
 
@@ -422,6 +424,7 @@ img.aligncenter {
 	margin-bottom: 5.142857143rem;
 	margin-right:125px;
 	margin-left:125px;
+	margin-top:50px;
 	padding: 30px;
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
@@ -429,8 +432,9 @@ img.aligncenter {
 	hyphens: auto;
 	border-style: solid;
 	border-width: 7px;
-	border-color: #ededed;
-	opacity: 0.82;
+	border-color: #FFD1D1;
+
+
 
 	
 
@@ -469,13 +473,24 @@ footer.entry-meta {
 
 
 /*ADDING BACKGROUND IMAGE PER EACH POST
-First one is the ABOUT page***************************/
-body.page-id-2 {
+First part sets general page opacity to 0.9. 	/*Opacity: The closer to 1, the less see-through it is
+First ID (page-id-2) is the ABOUT page***************************/
+
+.page {
+	opacity: 0.9;
+}
+
+.page-id-2 {
  background-image: url("http://onebigphoto.com/uploads/2012/04/red-panda-sleeping.jpg") !important; 
  background-repeat:no-repeat;
- background-attachment:fixed;
- background-position:center;
+ background-position: top;
+ 
+
 }
+
+
+
+
 
 
 /*THIS IS ME TRYING TO MAKE IT WHITE AND NOT GRAY IN THE FAR BACKGROUND*/
