@@ -45,19 +45,11 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
 
-<!--This part is the image-->
-
-	<?php $header_image = get_header_image();
-		if ( ! empty( $header_image ) ) : ?>
-			<a><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="100%" height="100%" alt="" /></a>
-		<?php endif; ?>
 
 
 
 
-
-
-<!--This part is the navigation shit-->
+		<!--This part is the navigation shit-->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
@@ -68,6 +60,22 @@
 	</header><!-- #masthead -->
 
 	<div id="main" class="wrapper">
+
+<!---/*********************
+**************************This part is the image. 
+it is hidden............*************
+
+	<?php $header_image = get_header_image();
+		if ( ! empty( $header_image ) ) : ?>
+			<a><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="100%" height="100%" alt="" /></a>
+		<?php endif; ?>
+
+
+-->
+
+
+
+
 
 
 
