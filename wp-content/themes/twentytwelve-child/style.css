@@ -422,8 +422,8 @@ img.aligncenter {
 	margin-bottom: 5.142857143rem;
 	margin-right:125px;
 	margin-left:125px;
-	margin-top:50px;
-	padding: 30px;
+	margin-top:75px;
+	padding:100px;
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
@@ -475,14 +475,14 @@ First part sets general page opacity to 0.9. 	/*Opacity: The closer to 1, the le
 First ID (page-id-2) is the ABOUT page***************************/
 
 .page {
-	opacity: 0.9;
+	opacity: 0.75;
 }
 
 .page-id-2 {
- background-image: url("http://farm6.staticflickr.com/5459/9302330831_971d98e4c3.jpg") !important; 
+ background-image: url("http://farm4.staticflickr.com/3718/9315977563_24a732af1c_o.jpg") !important; 
  background-repeat:no-repeat;
  background-position: top;
- 
+ color: black;
 
 }
 
@@ -554,11 +554,11 @@ SETS TOP PAGE PADDING TO A BIG NUMBER SO THAT THE IMAGE CAN BE SEEN
 ********************/
 
 
-.page {
-	padding-top: 150px;
+.page-id-2 {
+	padding-top: 50px;
 }
 .page-id-2 {
-	padding-top: 300px;
+	padding-top: 200px;
 }
 
 
