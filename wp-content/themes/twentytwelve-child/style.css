@@ -78,6 +78,16 @@ a:hover {
 	color: #757575;
 
 }
+
+.site-header h4 {
+	font-size: 75px;
+	color: #757575;
+	text-align: center;
+}
+
+.site-header h4 a{
+	text-decoration: none;
+}
 .header-image {
 	margin-top: 100px;
 

@@ -35,7 +35,7 @@
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-			<h2><a href="http://www.missmarymorgan.com"/>MMM</a></h2>
+			<h4><a href="http://www.missmarymorgan.com"/>MMM</a></h4>
 			
 				
 		</hgroup>
