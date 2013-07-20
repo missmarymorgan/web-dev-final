@@ -110,7 +110,38 @@ function add_console_taxonomies() {
 add_action( 'init', 'add_console_taxonomies', 0 );
 
 
-/* Replaces the excerpt "more" text by a link*/
+
+
+/****custom taxonomy 'event' for 'reviews' custom post******/
+
+function events_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'events',
+		'review',
+		array(
+			'label' => __( 'Events' ),
+			'rewrite' => array( 'slug' => 'event' ),
+			'capabilities' => array(
+				'assign_terms' => 'edit_guides',
+				'edit_terms' => 'publish_guides'
+			)
+		)
+	);
+}
+add_action( 'init', 'events_init' );
+
+
+
+
+
+
+/****************************
+ Replaces the excerpt "more" text by a link*************************
+ ********************
+ ****************
+ *******************
+ ************/
 
 
 function new_excerpt_more($more) {
@@ -118,9 +149,6 @@ function new_excerpt_more($more) {
 	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read the full article...</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
-
-
-
 
 
 
