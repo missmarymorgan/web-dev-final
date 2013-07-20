@@ -75,6 +75,41 @@ add_action( 'init', 'my_custom_post_howTo' );
 
 
 
+/**********
+This sets up the categories for 'Reviews' post type*******/
+
+
+function add_console_taxonomies() {
+
+	register_taxonomy('console', 'review', array(
+		// Hierarchical taxonomy (like categories)
+		'hierarchical' => true,
+		// This array of options controls the labels displayed in the WordPress Admin UI
+		'labels' => array(
+			'name' => _x( 'Review Category', 'taxonomy general name' ),
+			'singular_name' => _x( 'Review-Category', 'taxonomy singular name' ),
+			'search_items' =>  __( 'Search Review-Categories' ),
+			'all_items' => __( 'All Review-Categories' ),
+			'parent_item' => __( 'Parent Review-Category' ),
+			'parent_item_colon' => __( 'Parent Review-Category:' ),
+			'edit_item' => __( 'Edit Review-Category' ),
+			'update_item' => __( 'Update Review-Category' ),
+			'add_new_item' => __( 'Add New Review-Category' ),
+			'new_item_name' => __( 'New Review-Category Name' ),
+			'menu_name' => __( 'Review Categories' ),
+		),
+
+		// Control the slugs used for this taxonomy
+		'rewrite' => array(
+			'slug' => 'console', // This controls the base slug that will display before each term
+			'with_front' => false, // Don't display the category base before "/locations/"
+			'hierarchical' => true // This will allow URL's like "/locations/boston/cambridge/"
+		),
+	));
+}
+add_action( 'init', 'add_console_taxonomies', 0 );
+
+
 /* Replaces the excerpt "more" text by a link*/
 
 
