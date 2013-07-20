@@ -112,7 +112,7 @@ add_action( 'init', 'add_console_taxonomies', 0 );
 
 
 
-/****custom taxonomy 'event' for 'reviews' custom post******/
+/****trying to establish custom taxonomy******/
 
 function events_init() {
 	// create a new taxonomy
@@ -134,14 +134,10 @@ add_action( 'init', 'events_init' );
 
 
 
-
-
 /****************************
  Replaces the excerpt "more" text by a link*************************
  ********************
- ****************
- *******************
- ************/
+ *****************/
 
 
 function new_excerpt_more($more) {
