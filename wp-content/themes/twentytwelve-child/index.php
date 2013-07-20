@@ -33,6 +33,9 @@ include 'header-index.php';
 
 			<article id="post-0" class="post no-results not-found">
 
+
+				
+
 			<?php if ( current_user_can( 'edit_posts' ) ) :
 				// Show a different message to a logged-in user who can add posts.
 			?>
@@ -56,6 +59,8 @@ include 'header-index.php';
 					<?php get_search_form(); ?>
 				</div><!-- .entry-content -->
 			<?php endif; // end current_user_can() check ?>
+
+
 
 			</article><!-- #post-0 -->
 

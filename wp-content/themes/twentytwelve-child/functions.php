@@ -39,9 +39,41 @@ add_action( 'init', 'my_custom_post_review' );
 
 
 /**********
-This sets up the custom post 'How Tos'*******/
+This sets up the custom post 'Instructional'*******/
 
-function my_custom_post_howTos() {
+function my_custom_post_instructional() {
+	$labels = array(
+		'name'               => _x( 'Instructionals', 'instructionals' ),
+		'singular_name'      => _x( 'Instructional', 'instructional' ),
+		'add_new'            => _x( 'Add New', 'instructional' ),
+		'add_new_item'       => __( 'Add New Instructional' ),
+		'edit_item'          => __( 'Edit Instructional' ),
+		'new_item'           => __( 'New Instructional' ),
+		'all_items'          => __( 'All Instructionals' ),
+		'view_item'          => __( 'View Instructional' ),
+		'search_items'       => __( 'Search Instructionals' ),
+		'not_found'          => __( 'No instructionals found' ),
+		'not_found_in_trash' => __( 'No instructionals found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Instructionals'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Everything you need to know how to do in DC',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'instructional', $args );	
+}
+add_action( 'init', 'my_custom_post_instructional' );
+
+
+/**********
+This sets up the custom post 'How To'*******/
+
+function my_custom_post_howTo() {
 	$labels = array(
 		'name'               => _x( 'How Tos', 'how tos' ),
 		'singular_name'      => _x( 'How To', 'how to' ),
@@ -59,7 +91,7 @@ function my_custom_post_howTos() {
 	);
 	$args = array(
 		'labels'        => $labels,
-		'description'   => 'How Tos from the greater DC area',
+		'description'   => 'Everything you need to know how to do in DC',
 		'public'        => true,
 		'menu_position' => 5,
 		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
@@ -68,6 +100,16 @@ function my_custom_post_howTos() {
 	register_post_type( 'how to', $args );	
 }
 add_action( 'init', 'my_custom_post_howTo' );
+
+
+
+
+
+
+
+
+
+
 
 
 
