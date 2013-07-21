@@ -210,7 +210,29 @@ function popCulture_init() {
 add_action( 'init', 'popCulture_init' );
 
 
+/****
+***********
+establish custom taxonomy
+RECIPES for HOW TOS
+WHY ISN'T THIS WORKING??????
+*********************************************
+******/
 
+function recipes_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'Recipes',
+		'how to',
+		array(
+			'label' 		=> __( 'Recipes' ),
+			'rewrite' 		=> array( 'slug' => 'recipe' ),
+			'capabilities' 	=> array(
+				
+			)
+		)
+	);
+}
+add_action( 'init', 'recipes_init' );
 
 /****************************
  Replaces the excerpt "more" text by a link*************************
