@@ -112,7 +112,12 @@ add_action( 'init', 'add_console_taxonomies', 0 );
 
 
 
-/****trying to establish custom taxonomy******/
+/****
+***********
+establish custom taxonomy
+EVENTS for REVIEWS
+*********************************************
+******/
 
 function events_init() {
 	// create a new taxonomy
@@ -129,6 +134,35 @@ function events_init() {
 	);
 }
 add_action( 'init', 'events_init' );
+
+
+/****
+***********
+establish custom taxonomy
+RESTAURANTS for REVIEWS
+*********************************************
+******/
+
+function restaurants_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'restaurants',
+		'review',
+		array(
+			'label' 		=> __( 'Restaurants' ),
+			'rewrite' 		=> array( 'slug' => 'restaurant' ),
+			'capabilities' 	=> array(
+				
+			)
+		)
+	);
+}
+add_action( 'init', 'restaurants_init' );
+
+
+
+
+
 
 
 
