@@ -120,11 +120,10 @@ function events_init() {
 		'events',
 		'review',
 		array(
-			'label' => __( 'Events' ),
-			'rewrite' => array( 'slug' => 'event' ),
-			'capabilities' => array(
-				'assign_terms' => 'edit_guides',
-				'edit_terms' => 'publish_guides'
+			'label' 		=> __( 'Events' ),
+			'rewrite' 		=> array( 'slug' => 'event' ),
+			'capabilities' 	=> array(
+				
 			)
 		)
 	);
