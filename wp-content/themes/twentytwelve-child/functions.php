@@ -161,7 +161,28 @@ add_action( 'init', 'restaurants_init' );
 
 
 
+/****
+***********
+establish custom taxonomy
+SHOWS for REVIEWS
+*********************************************
+******/
 
+function shows_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'shows',
+		'review',
+		array(
+			'label' 		=> __( 'Shows' ),
+			'rewrite' 		=> array( 'slug' => 'show' ),
+			'capabilities' 	=> array(
+				
+			)
+		)
+	);
+}
+add_action( 'init', 'shows_init' );
 
 
 
