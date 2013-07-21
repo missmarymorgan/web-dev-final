@@ -186,6 +186,30 @@ add_action( 'init', 'shows_init' );
 
 
 
+/****
+***********
+establish custom taxonomy
+POP CULTURE for REVIEWS
+*********************************************
+******/
+
+function popCulture_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'Pop Culture',
+		'review',
+		array(
+			'label' 		=> __( 'Pop Culture' ),
+			'rewrite' 		=> array( 'slug' => 'pop culture' ),
+			'capabilities' 	=> array(
+				
+			)
+		)
+	);
+}
+add_action( 'init', 'popCulture_init' );
+
+
 
 
 /****************************
