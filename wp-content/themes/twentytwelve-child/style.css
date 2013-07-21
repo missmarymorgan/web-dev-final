@@ -131,13 +131,13 @@ footer[role="contentinfo"] {
 ****************/
 
 .site {
-	padding: 0 24px;
-	padding: 0 1.714285714rem;
+	padding: 24px;
 	background-color: #fff;
 }
 .site-content {
 	margin: 40, 40, 40, 40px;
-	
+	float: none;
+	position: relative;
 	padding: 40, 40, 40, 40px;
 }
 .widget-area {
@@ -433,8 +433,8 @@ img.aligncenter {
 .site-content article {
 	margin-bottom: 72px;
 	margin-bottom: 5.142857143rem;
-	margin-right:125px;
-	margin-left:125px;
+	margin-right:150px;
+	margin-left:150px;
 	margin-top:75px;
 	padding:100px;
 	word-wrap: break-word;
@@ -444,6 +444,9 @@ img.aligncenter {
 	border-style: solid;
 	border-width: 7px;
 	border-color: #FFD1D1;
+	float: center;
+	position: relative;
+
 
 
 
@@ -491,15 +494,17 @@ First ID (page-id-2) is the ABOUT page***************************/
 	opacity: 0.75;
 }
 
-.page-id-2 {
+.page-id-524 {
  background-image: url("http://farm4.staticflickr.com/3718/9315977563_24a732af1c_o.jpg") !important; 
  background-repeat:no-repeat;
  background-position: top;
  color: black;
 
 }
+.page-id-524 {
+	margin-top: 230px;
 
-
+}
 
 
 
@@ -584,6 +589,8 @@ SETS TOP PAGE PADDING TO A BIG NUMBER SO THAT THE IMAGE CAN BE SEEN
 .entry-page-image {
 	margin-bottom: 14px;
 	margin-bottom: 1rem;
+
+
 }
 .template-front-page .site-content article {
 	border: 0;

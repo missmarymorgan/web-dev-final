@@ -2,6 +2,20 @@
 
 
 
+add_filter( 'pre_get_posts', 'my_get_posts' );
+
+function my_get_posts( $query ) {
+
+	if ( ( is_home() && $query->is_main_query() ) || is_feed() )
+		$query->set( 'post_type', array( 'post', 'page', 'review', 'how to' ) );
+
+	return $query;
+}
+
+
+
+
+
 /**********
 This sets up the custom post 'Reviews'*******/
 
