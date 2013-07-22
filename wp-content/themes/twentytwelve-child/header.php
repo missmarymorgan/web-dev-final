@@ -42,17 +42,7 @@
 
 
 
-		<!--This part is the navigation shit-->
-
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
-			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-		
-	</header><!-- #masthead -->
-
-	<div id="main" class="wrapper">
+	
 
 
 <!---This part is the image. It is currently hidden:
