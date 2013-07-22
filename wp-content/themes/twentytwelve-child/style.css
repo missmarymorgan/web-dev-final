@@ -168,6 +168,7 @@ MAIN CONTENT AND COMMENT SECTION *********************
 
 .entry-meta {
 	clear: both;
+	{display:none;}
 }
 .entry-header {
 	margin-bottom: 24px;
@@ -470,6 +471,7 @@ footer.entry-meta {
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;
+	display:none;
 }
 .single-author .entry-meta .by-author {
 	display: none;

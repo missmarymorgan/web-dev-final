@@ -7,7 +7,7 @@ add_filter( 'pre_get_posts', 'my_get_posts' );
 function my_get_posts( $query ) {
 
 	if ( ( is_home() && $query->is_main_query() ) || is_feed() )
-		$query->set( 'post_type', array( 'post', 'page', 'review', 'how to' ) );
+		$query->set( 'post_type', array( 'post', 'page', 'review', 'lesson' ) );
 
 	return $query;
 }
@@ -95,7 +95,7 @@ This sets up the custom post 'Lessons'*******/
 function my_custom_post_lesson() {
 	$labels = array(
 		'name'               => _x( 'Lessons', 'lessons' ),
-		'singular_name'      => _x( 'Lesson', 'Lesson' ),
+		'singular_name'      => _x( 'Lesson', 'lesson' ),
 		'add_new'            => _x( 'Add New', 'Lesson' ),
 		'add_new_item'       => __( 'Add New Lesson' ),
 		'edit_item'          => __( 'Edit Lesson' ),
@@ -159,6 +159,7 @@ function add_console_taxonomies() {
 	));
 }
 add_action( 'init', 'add_console_taxonomies', 0 );
+
 
 
 
@@ -309,9 +310,34 @@ add_action( 'init', 'recipes_init' );
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*adds normal categories, etc to lessons*/
-
-
+ 
+ 
 add_action('init', 'lesson_add_default_boxes');
  
 function lesson_add_default_boxes() {
