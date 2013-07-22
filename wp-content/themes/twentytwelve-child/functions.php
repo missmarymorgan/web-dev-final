@@ -117,6 +117,7 @@ function my_custom_post_lesson() {
 		'has_archive'   => true,
 	);
 	register_post_type( 'lesson', $args );	
+
 }
 add_action( 'init', 'my_custom_post_lesson' );
 
@@ -158,7 +159,6 @@ function add_console_taxonomies() {
 	));
 }
 add_action( 'init', 'add_console_taxonomies', 0 );
-
 
 
 
@@ -308,27 +308,16 @@ add_action( 'init', 'recipes_init' );
 
 
 
-/*GENERAL posts for 'lessons'*/
 
-function categories_init() {
-	// create a new taxonomy
-	register_taxonomy(
-		'categories',
-		'lesson',
-		array(
-			'label' => __( 'Categories' ),
-			'rewrite' => array( 'slug' => 'category' ),
-			'capabilities' => array(
-				
-			)
-		)
-	);
+/*adds normal categories, etc to lessons*/
+
+
+add_action('init', 'lesson_add_default_boxes');
+ 
+function lesson_add_default_boxes() {
+    register_taxonomy_for_object_type('category', 'lesson');
+    register_taxonomy_for_object_type('post_tag', 'lesson');
 }
-add_action( 'init', 'categories_init' );
-
-
-
-
 
 
 
