@@ -90,6 +90,42 @@ add_action( 'init', 'my_custom_post_howTo' );
 
 
 /**********
+This sets up the custom post 'Lessons'*******/
+
+function my_custom_post_lesson() {
+	$labels = array(
+		'name'               => _x( 'Lessons', 'lessons' ),
+		'singular_name'      => _x( 'Lesson', 'Lesson' ),
+		'add_new'            => _x( 'Add New', 'Lesson' ),
+		'add_new_item'       => __( 'Add New Lesson' ),
+		'edit_item'          => __( 'Edit Lesson' ),
+		'new_item'           => __( 'New Lesson' ),
+		'all_items'          => __( 'All Lessons' ),
+		'view_item'          => __( 'View Lesson' ),
+		'search_items'       => __( 'Search Lessons' ),
+		'not_found'          => __( 'No lessons found' ),
+		'not_found_in_trash' => __( 'No lessons found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Lessons'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Every lesson you need for DC',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'lesson', $args );	
+}
+add_action( 'init', 'my_custom_post_lesson' );
+
+
+
+
+
+
+/**********
 This sets up the categories for 'Reviews' post type*******/
 
 
@@ -122,6 +158,16 @@ function add_console_taxonomies() {
 	));
 }
 add_action( 'init', 'add_console_taxonomies', 0 );
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -224,29 +270,43 @@ function popCulture_init() {
 add_action( 'init', 'popCulture_init' );
 
 
-/****
-***********
-establish custom taxonomy
-RECIPES for HOW TOS
-WHY ISN'T THIS WORKING??????
-*********************************************
-******/
+
+
+
+
+
+
+
+
+
 
 function recipes_init() {
 	// create a new taxonomy
 	register_taxonomy(
-		'Recipes',
-		'how to',
+		'recipes',
+		'lesson',
 		array(
-			'label' 		=> __( 'Recipes' ),
-			'rewrite' 		=> array( 'slug' => 'recipe' ),
-			'capabilities' 	=> array(
+			'label' => __( 'Recipes' ),
+			'rewrite' => array( 'slug' => 'recipe' ),
+			'capabilities' => array(
 				
 			)
 		)
 	);
 }
 add_action( 'init', 'recipes_init' );
+
+
+
+
+
+
+
+
+
+
+
+
 
 /****************************
  Replaces the excerpt "more" text by a link*************************
