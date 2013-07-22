@@ -166,7 +166,11 @@ add_action( 'init', 'add_console_taxonomies', 0 );
 
 
 
-
+/************************************************************************************
+*************************************************************************************
+****************************    TAXONOMIES     **************************************
+*************************************************************************************
+************************************************************************************/
 
 
 
@@ -277,7 +281,12 @@ add_action( 'init', 'popCulture_init' );
 
 
 
-
+/****
+***********
+establish custom taxonomy
+RECIPES for LESSONS
+*********************************************
+******/
 
 
 function recipes_init() {
@@ -299,6 +308,23 @@ add_action( 'init', 'recipes_init' );
 
 
 
+/*GENERAL posts for 'lessons'*/
+
+function categories_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'categories',
+		'lesson',
+		array(
+			'label' => __( 'Categories' ),
+			'rewrite' => array( 'slug' => 'category' ),
+			'capabilities' => array(
+				
+			)
+		)
+	);
+}
+add_action( 'init', 'categories_init' );
 
 
 
