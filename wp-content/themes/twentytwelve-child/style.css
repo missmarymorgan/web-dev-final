@@ -508,14 +508,24 @@ First ID (page-id-2) is the ABOUT page***************************/
 
 }
 
-.post-id-544 {
+.review-id-544 {
 	background-image: url("http://farm8.staticflickr.com/7321/9355402988_2c7d2ae199_b.jpg") !important;
 	background-repeat:no-repeat;
  	background-position: top;
  	color: black;
+ 	opacity: 0.9;
+ 	margin-top:230px;
 }
 
+.page-id-0 {
+	background-image: url("http://farm8.staticflickr.com/7321/9355402988_2c7d2ae199_b.jpg") !important;
+	background-repeat:no-repeat;
+ 	background-position: top;
+ 	color: black;
+ 	opacity: 0.9;
+ 	margin-top:230px;
 
+}
 
 
 
