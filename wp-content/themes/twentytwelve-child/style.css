@@ -497,14 +497,15 @@ First ID (page-id-2) is the ABOUT page***************************/
 }
 
 .page-id-524 {
- background-image: url("http://farm4.staticflickr.com/3718/9315977563_24a732af1c_o.jpg") !important; 
+ background-image: url("http://farm8.staticflickr.com/7308/9366055555_26497d15e8_b.jpg") !important; 
  background-repeat:no-repeat;
  background-position: top;
+ background-size: 1040px 477px;
  color: black;
 
 }
 .page-id-524 {
-	margin-top: 230px;
+	margin-top: 250px;
 
 }
 .post-id-524 {
@@ -517,19 +518,21 @@ First ID (page-id-2) is the ABOUT page***************************/
  	background-position: top;
  	color: black;
  	opacity: 0.9;
- 	margin-top:230px;
+ 	margin-top:250px;
 }
 
 .home {
-	background-image: url("http://farm4.staticflickr.com/3758/9365886097_b5e512916f_b.jpg") !important;
+	background-image: url("http://farm3.staticflickr.com/2830/9368826566_0bfdc0e865_b.jpg") !important;
 	background-repeat:no-repeat;
  	background-position: top;
- 	background-size: 1040px 563px;
+ 	background-size: 1040px 800px;
  	color: black;
  	opacity: 0.9;
- 	margin-top:230px;
+ 	margin-top:250px;
 
 }
+
+/*NOTE: a background size of 1040px 563px is exactly the height and width of the header down to the start of the content.*/
 
 
 
