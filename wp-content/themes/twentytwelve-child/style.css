@@ -521,9 +521,10 @@ First ID (page-id-2) is the ABOUT page***************************/
 }
 
 .home {
-	background-image: url("http://farm8.staticflickr.com/7321/9355402988_2c7d2ae199_b.jpg") !important;
+	background-image: url("http://farm4.staticflickr.com/3758/9365886097_b5e512916f_b.jpg") !important;
 	background-repeat:no-repeat;
  	background-position: top;
+ 	background-size: 1040px 563px;
  	color: black;
  	opacity: 0.9;
  	margin-top:230px;
