@@ -60,7 +60,7 @@ include 'header-index.php';
 				</div><!-- .entry-content -->
 			<?php endif; // end current_user_can() check ?>
 
-
+			
 
 			</article><!-- #post-0 -->
 

@@ -117,6 +117,7 @@ function my_custom_post_lesson() {
 		'has_archive'   => true,
 	);
 	register_post_type( 'lesson', $args );	
+	
 
 }
 add_action( 'init', 'my_custom_post_lesson' );
