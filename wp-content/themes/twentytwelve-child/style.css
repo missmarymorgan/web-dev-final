@@ -507,8 +507,11 @@ First ID (page-id-2) is the ABOUT page***************************/
 	margin-top: 230px;
 
 }
+.post-id-524 {
+	opacity: 1.0;
+}
 
-.review-id-544 {
+.page-id-544 {
 	background-image: url("http://farm8.staticflickr.com/7321/9355402988_2c7d2ae199_b.jpg") !important;
 	background-repeat:no-repeat;
  	background-position: top;
