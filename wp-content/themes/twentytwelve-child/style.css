@@ -36,7 +36,7 @@ a {
 	color: #303030;
 }
 a:hover {
-	color: #F0F0F0;
+	color: #FFD1D1;
 }
 
 
@@ -63,7 +63,7 @@ a:hover {
 }
 .site-header h1 a:hover,
 .site-header h2 a:hover {
-	color: #000000;
+	color: #FFD1D1;
 }
 .site-header h1 {
 	font-weight: normal;
@@ -206,7 +206,7 @@ MAIN CONTENT AND COMMENT SECTION *********************
 }
 .comments-link a:hover,
 .entry-meta a:hover {
-	color: #21759b;
+	color: #FFD1D1;
 }
 article.sticky .featured-post {
 	border-top: 4px double #ededed;
@@ -218,6 +218,7 @@ article.sticky .featured-post {
 	margin-bottom: 24px;
 	margin-bottom: 1.714285714rem;
 	text-align: center;
+
 
 }
 .entry-content,
@@ -447,6 +448,7 @@ img.aligncenter {
 	border-color: #FFD1D1;
 	float: center;
 	position: relative;
+	opacity: 1.0;
 
 
 
@@ -527,9 +529,20 @@ First ID (page-id-2) is the ABOUT page***************************/
  	background-position: top;
  	background-size: 1040px 800px;
  	color: black;
- 	opacity: 0.9;
+ 	opacity: 0.90;
  	margin-top:250px;
 
+
+}
+
+.reviews {
+	background-image: url("http://farm3.staticflickr.com/2830/9368826566_0bfdc0e865_b.jpg") !important;
+	background-repeat:no-repeat;
+ 	background-position: top;
+ 	background-size: 1040px 800px;
+ 	color: black;
+ 	opacity: 0.9;
+ 	margin-top:250px;
 }
 
 /*NOTE: a background size of 1040px 563px is exactly the height and width of the header down to the start of the content.*/
