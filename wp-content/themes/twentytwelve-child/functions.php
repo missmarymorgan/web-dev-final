@@ -306,15 +306,57 @@ add_action( 'init', 'recipes_init' );
 
 
 
+function politics_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'politics',
+		'lesson',
+		array(
+			'label' => __( 'Politics' ),
+			'rewrite' => array( 'slug' => 'politic' ),
+			'capabilities' => array(
+				
+			)
+		)
+	);
+}
+add_action( 'init', 'politics_init' );
 
 
 
+function theDistrict_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'the district',
+		'lesson',
+		array(
+			'label' => __( 'The District' ),
+			'rewrite' => array( 'slug' => 'the district' ),
+			'capabilities' => array(
+				
+			)
+		)
+	);
+}
+add_action( 'init', 'theDistrict_init' );
 
 
 
-
-
-
+function Categories_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'categories',
+		'lesson',
+		array(
+			'label' => __( 'Categories' ),
+			'rewrite' => array( 'slug' => 'category' ),
+			'capabilities' => array(
+				
+			)
+		)
+	);
+}
+add_action( 'init', 'categories_init' );
 
 
 
