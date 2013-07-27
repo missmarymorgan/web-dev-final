@@ -165,9 +165,6 @@ add_action( 'init', 'add_console_taxonomies', 0 );
 
 
 
-
-
-
 /************************************************************************************
 *************************************************************************************
 ****************************    TAXONOMIES     **************************************
@@ -336,7 +333,7 @@ add_action( 'init', 'recipes_init' );
 
 
 
-/*adds normal categories, etc to lessons*/
+/*adds normal categories, etc to lessons
  
  
 add_action('init', 'lesson_add_default_boxes');
@@ -346,7 +343,7 @@ function lesson_add_default_boxes() {
     register_taxonomy_for_object_type('post_tag', 'lesson');
 }
 
-
+*/
 
 
 
