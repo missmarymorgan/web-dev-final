@@ -544,6 +544,18 @@ First ID (page-id-2) is the ABOUT page***************************/
  	opacity: 0.9;
  	margin-top:250px;
 }
+.page-id-599 {
+ 	background-image: url("http://farm8.staticflickr.com/7457/9385359337_5ae399ccc6_o.jpg") !important; 
+ 	background-repeat:no-repeat;
+ 	background-position: top;
+ 	background-size: 1040px 477px;
+ 	color: black;
+	margin-top: 250px;
+	opacity:0.80;
+}
+
+
+
 
 /*NOTE: a background size of 1040px 563px is exactly the height and width of the header down to the start of the content.*/
 
